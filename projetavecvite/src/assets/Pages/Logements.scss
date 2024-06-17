@@ -1,0 +1,19 @@
+.details{
+display: flex;
+justify-content: space-between;
+}
+.host-picture{
+            width: 64px; /* Ajustez la taille selon vos besoins */
+            height: 64px; /* Assurez-vous que la hauteur est égale à la largeur pour un cercle parfait */
+            border-radius: 50%; /* Rend l'image circulaire */
+            object-fit: cover; 
+            margin-left: 1200px;
+            margin-top: -40px;
+}
+.logement-title{
+   color:  #FF6060;
+   width: 500px;
+   height: 70
+
+
+}

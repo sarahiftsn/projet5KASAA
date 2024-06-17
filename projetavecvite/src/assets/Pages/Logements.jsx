@@ -1,32 +1,66 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import logements from '../logements.json';
-import './LogementDetail.scss';
+import logements from '../../logements.json'; // Assurez-vous que le chemin est correct
+import Dropdown from '../../components/Dropdown';
+import './Logements.scss';
+
 
 function Logements() {
   const { id } = useParams();
-  const logement = logements.find(l => l.id === id);
+  const logement = logements.find((logement) => logement.id === id);
 
   if (!logement) {
     return <div>Logement non trouvé</div>;
   }
 
   return (
-    <div className="logement-detail">
-      <h1>{logement.title}</h1>
-      <img src={logement.cover} alt={logement.title} />
-      <p>{logement.description}</p>
-      <h2>Équipements</h2>
-      <ul>
-        {logement.equipments.map((equipement, index) => (
-          <li key={index}>{equipement}</li>
-        ))}
-      </ul>
-      <h2>Photos</h2>
-      <div className="photos">
+    <div className='logement'>
+      
+      <div className='logement-pictures'>
         {logement.pictures.map((picture, index) => (
-          <img key={index} src={picture} alt={`${logement.title} ${index + 1}`} />
+          <img key={index} src={picture} alt={`Picture ${index + 1}`} className='logement-picture' />
         ))}
+      </div>
+      <h1 className='logement-title'>{logement.title}</h1>
+      <div className='logement-location'>{logement.location}</div>
+      <div className='logement-rating'>Rating: {logement.rating}</div>
+
+      <div className='logement-host'>
+        <img src={logement.host.picture} alt={logement.host.name} className='host-picture' />
+        <div className='host-name'>{logement.host.name}</div>
+      </div>
+      <div className='details'>
+       <div className='Description'>
+       <Dropdown className="dropdown-item" title={
+        <p>Description</p>
+      }>
+      <div className='logement-description'>{logement.description}</div>
+      </Dropdown>
+      </div>
+
+      
+     
+      <div className='logement-equipments'>
+      <Dropdown className="dropdown-item" title={
+        <p>Equipments:</p>
+      }>
+      
+        <ul>
+          {logement.equipments.map((equipment, index) => (
+            <li key={index}>{equipment}</li>
+          ))}
+        </ul>
+        </Dropdown>
+      </div>
+      </div>
+
+      <div className='logement-tags'>
+        <h3>Tags:</h3>
+        <ul>
+          {logement.tags.map((tag, index) => (
+            <li key={index} className='tag'>{tag}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );

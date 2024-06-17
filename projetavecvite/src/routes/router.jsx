@@ -6,7 +6,8 @@ import Footer from "../layout/Footer";
 import Cards from "../components/Cards";
 import About from "../assets/Pages/About";
 import Home from "../assets/Pages/Home";
-import Main from "../layout/Main";
+import Main from "../layout/Main"; 
+import Logements from  "../assets/Pages/Logements";
 
 
 const HeaderFooterLayout = () => {
@@ -32,13 +33,14 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
+        path: '/flat/:id',
+        element: <Logements />
+      },
+      {
         path: "/about",
         element: <About />,
       },
-      {
-        path: "/cards",
-        element: <Cards />,
-      },
+      
       // Ajoutez d'autres routes ici si nécessaire
     ],
   },
