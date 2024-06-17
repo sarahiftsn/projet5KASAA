@@ -1,0 +1,43 @@
+$card-width: 340px;
+$card-height: 340px;
+$card-bg-color: #F6F6F6;
+$card-border-color: #ccc;
+$card-border-radius: 8px;
+$card-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+$gap: 20px;
+$margin-left: 70px;
+$margin-top: 30px;
+$card-content-padding: 16px;
+
+.cards {
+  width: 1200px;
+  background-color: $card-bg-color;
+  border: 1px solid $card-bg-color;
+  border-radius: 20px;
+  margin-left: $margin-left;
+  margin-top: $margin-top;
+  display: flex;
+  flex-wrap: wrap; // Pour permettre l'enroulement des cartes
+  gap: $gap; // Espacement entre les cartes
+
+  .card {
+    border: 1px solid $card-border-color;
+    border-radius: $card-border-radius;
+    width: $card-width;
+    height: $card-height;
+    box-shadow: $card-box-shadow;
+    margin-left: 30px;
+    margin-top: 30px;
+    position: relative; // Ajouter cette ligne
+
+    &-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: $card-border-radius; // Assurez-vous que l'image a aussi les coins arrondis
+    }
+
+    
+    
+  }
+}

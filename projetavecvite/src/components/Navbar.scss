@@ -1,0 +1,36 @@
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 1em;
+    margin-top: 40px;
+  
+    .logo {
+      margin-left: 60px;
+  
+      img {
+        width: 210.32px;
+        height: 68px;
+       
+      }
+    }
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 0; // Suppression du padding par défaut
+    
+        li {
+          margin-right: 90px;
+    
+          a {
+            color: #000000;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+   

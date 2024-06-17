@@ -1,0 +1,19 @@
+.paysage img{
+    width:1240px;
+    height: 223px;
+     margin-top: 50px;
+     margin-left: 50px;
+     object-fit: cover;
+     border-radius: 1.6em;
+     filter: brightness(0.6);  // Réduit la luminosité à 70%
+ }
+ .dropdownn{
+    margin-left: 100px;
+    margin-top: 30px;
+ }
+ 
+ .dropdown-title{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+ }

@@ -1,0 +1,35 @@
+.dropdown {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+  
+    &.open .dropdown-body {
+      display: block;
+    }
+  
+    .dropdown-header {
+      background-color: #FF6060;
+      padding: 1rem;
+      cursor: pointer;
+    
+  
+     
+    }
+  
+    .dropdown-body {
+      display: none;
+      padding: 1rem;
+    }
+  }
+  .dropdown-icon{
+    margin-left: 1100px;
+    color: white;
+    margin-top: -60px;
+  }
+
+  .dropdown-header title{
+    margin-top: 50px;
+  }
+  
+  
