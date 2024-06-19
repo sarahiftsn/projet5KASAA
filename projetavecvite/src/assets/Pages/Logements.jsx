@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import logements from '../../logements.json'; // Assurez-vous que le chemin est correct
 import Dropdown from '../../components/Dropdown';
 import './Logements.scss';
+import Slideshow from '../../components/Slideshow';
 
 
 function Logements() {
@@ -17,9 +18,7 @@ function Logements() {
     <div className='logement'>
       
       <div className='logement-pictures'>
-        {logement.pictures.map((picture, index) => (
-          <img key={index} src={picture} alt={`Picture ${index + 1}`} className='logement-picture' />
-        ))}
+      <Slideshow pictures={logement.pictures} />
       </div>
       <h1 className='logement-title'>{logement.title}</h1>
       <div className='logement-location'>{logement.location}</div>

@@ -7,7 +7,9 @@ $card-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 $gap: 20px;
 $margin-left: 70px;
 $margin-top: 30px;
-$card-content-padding: 16px;
+$card-content-padding: 1px;
+$card-title-bg: rgba(0, 0, 0, 0.3); // Background color for the title
+$card-title-color: #fff; // Title text color
 
 .cards {
   width: 1200px;
@@ -37,7 +39,21 @@ $card-content-padding: 16px;
       border-radius: $card-border-radius; // Assurez-vous que l'image a aussi les coins arrondis
     }
 
-    
-    
+    &-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: $card-content-padding;
+      background-color: $card-title-bg; // Background color with opacity
+      color: $card-title-color; // Title text color
+      border-bottom-left-radius: $card-border-radius;
+      border-bottom-right-radius: $card-border-radius;
+      text-align: center;
+
+      .card-title {
+        margin: 0;
+      }
+    }
   }
 }
