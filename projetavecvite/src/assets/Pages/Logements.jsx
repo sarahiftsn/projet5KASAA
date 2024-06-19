@@ -20,14 +20,17 @@ function Logements() {
       <div className='logement-pictures'>
       <Slideshow pictures={logement.pictures} />
       </div>
+      <div className='title-host'>
       <h1 className='logement-title'>{logement.title}</h1>
-      <div className='logement-location'>{logement.location}</div>
-      <div className='logement-rating'>Rating: {logement.rating}</div>
-
       <div className='logement-host'>
         <img src={logement.host.picture} alt={logement.host.name} className='host-picture' />
         <div className='host-name'>{logement.host.name}</div>
       </div>
+      </div>
+      <div className='logement-location'>{logement.location}</div>
+      <div className='logement-rating'>Rating: {logement.rating}</div>
+
+     
       <div className='details'>
        <div className='Description'>
        <Dropdown className="dropdown-item" title={

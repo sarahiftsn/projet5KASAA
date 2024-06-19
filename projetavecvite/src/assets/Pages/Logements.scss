@@ -1,24 +1,39 @@
-.details{
-display: flex;
-justify-content: space-between;
-}
-.host-picture{
-            width: 64px; /* Ajustez la taille selon vos besoins */
-            height: 64px; /* Assurez-vous que la hauteur est égale à la largeur pour un cercle parfait */
-            border-radius: 50%; /* Rend l'image circulaire */
-            object-fit: cover; 
-            margin-left: 1200px;
-            margin-top: -40px;
-}
-.logement-title{
-   color:  #FF6060;
+
+
+
+   .logement-pictures {
+     margin-top: 30px;
+   }
+ 
+   .title-host {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 20px; // Ajustez si nécessaire
+ 
+     .logement-title {
+       font-size: 24px; // Ajustez selon vos besoins
+       color:  #FF6060;
    width: 500px;
    height: 70
-
-
-}
-
-.logement-pictures{
-   margin-top: 1.875em;
-   
-}
+     }
+ 
+     .logement-host {
+       display: flex;
+       align-items: center;
+ 
+       .host-picture {
+         width: 64px; /* Ajustez la taille selon vos besoins */
+         height: 64px; /* Assurez-vous que la hauteur est égale à la largeur pour un cercle parfait */
+         border-radius: 50%; /* Rend l'image circulaire */
+         object-fit: cover; 
+        
+         border-radius: 50%;
+         margin-left: 20px; // Espacement entre l'image et le nom
+       }
+ 
+       .host-name {
+         margin-left: 10px; // Espacement entre l'image et le nom
+       }
+     }
+   }
