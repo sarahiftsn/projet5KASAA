@@ -7,6 +7,7 @@ import Slideshow from '../../components/Slideshow';
 import Rating from '../../components/Rating'; // Importer le composant Rating
 import { Link } from 'react-router-dom';
 import Error from './Page404';
+import { FaChevronUp } from 'react-icons/fa';
 
 function Logements() {
   const { id } = useParams();
