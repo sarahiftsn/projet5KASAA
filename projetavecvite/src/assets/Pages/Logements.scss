@@ -14,8 +14,8 @@
      .logement-title {
        font-size: 24px; // Ajustez selon vos besoins
        color:  #FF6060;
-   width: 500px;
-   height: 70
+      width: 500px;
+      height: 70
      }
  
      .logement-host {
@@ -58,12 +58,37 @@ ul {
 }
 
 .logement-tags .tag {
-  background-color: #f0f0f0; /* Couleur de fond des tags */
+  background-color: #FF6060; /* Couleur de fond des tags */
   padding: 4px 8px; /* Ajustez le padding si nécessaire */
-  border-radius: 4px; /* Ajout d'arrondis aux coins */
+  border-radius: 10px; /* Ajout d'arrondis aux coins */
+  color:white;
 }
  
 .logement-tags{
   display: flex;
   justify-content: space-between;
+}
+.Description{
+  color: antiquewhite;
+  width: 37.375em;
+}
+  
+.logement-equipments{
+  color: aliceblue;
+  width: 37.375em;
+ 
+}
+.details{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  margin-top: 30px;
+ 
+}
+.Description  .dropdown-body{
+  color: black;
+
+}
+.logement-equipments .dropdown-body{
+  color: black;
 }

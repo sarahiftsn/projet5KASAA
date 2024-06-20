@@ -46,12 +46,12 @@ function Logements() {
       </div>
       <div className='details'>
         <div className='Description'>
-          <Dropdown className="dropdown-item" title={<p>Description</p>}>
+          <Dropdown className="dropdown-item logement-dropdown" title={<p>Description</p>}>
             <div className='logement-description'>{logement.description}</div>
           </Dropdown>
         </div>
         <div className='logement-equipments'>
-          <Dropdown className="dropdown-item" title={<p>Equipments:</p>}>
+          <Dropdown className="dropdown-item logement-dropdown" title={<p>Equipments:</p>}>
             <ul>
               {logement.equipments.map((equipment, index) => (
                 <li key={index}>{equipment}</li>
