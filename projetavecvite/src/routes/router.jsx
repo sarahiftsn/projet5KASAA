@@ -8,6 +8,8 @@ import About from "../assets/Pages/About";
 import Home from "../assets/Pages/Home";
 import Main from "../layout/Main"; 
 import Logements from  "../assets/Pages/Logements";
+import Error from "../assets/Pages/Page404";
+
 
 
 const HeaderFooterLayout = () => {
@@ -39,6 +41,10 @@ export const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/error",
+        element: <Error />,
       },
       
       // Ajoutez d'autres routes ici si nécessaire

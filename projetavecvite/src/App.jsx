@@ -7,6 +7,7 @@ import About from './assets/Pages/About';
 import Footer from './layout/Footer';
 import Banner from './layout/Banner';
 import Main from './layout/Main';
+import Error from './assets/Pages/Page404';
 
 function App() {
   const [count, setCount] = useState(0)
