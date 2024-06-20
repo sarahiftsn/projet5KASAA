@@ -37,3 +37,33 @@
        }
      }
    }
+
+   /* Enlever les puces des listes */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Styles pour les étoiles de notation */
+.rating {
+  display: flex;
+  margin-top: 1em;
+}
+
+/* Alignement des tags sur une seule ligne avec un espace entre eux */
+.logement-tags ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; /* Ajustez l'espacement entre les tags si nécessaire */
+}
+
+.logement-tags .tag {
+  background-color: #f0f0f0; /* Couleur de fond des tags */
+  padding: 4px 8px; /* Ajustez le padding si nécessaire */
+  border-radius: 4px; /* Ajout d'arrondis aux coins */
+}
+ 
+.logement-tags{
+  display: flex;
+  justify-content: space-between;
+}

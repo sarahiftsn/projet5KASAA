@@ -31,8 +31,18 @@ function Logements() {
         </div>
       </div>
       <div className='logement-location'>{logement.location}</div>
+      <div className='logement-tags'>
+        <div className='tags'>
+        <ul>
+          {logement.tags.map((tag, index) => (
+            <li key={index} className='tag'>{tag}</li>
+          ))}
+        </ul>
+        </div>
+     
       <div className='logement-rating'>
         <Rating rating={logement.rating} /> {/* Utiliser le composant Rating ici */}
+      </div>
       </div>
       <div className='details'>
         <div className='Description'>
@@ -50,14 +60,7 @@ function Logements() {
           </Dropdown>
         </div>
       </div>
-      <div className='logement-tags'>
-        <h3>Tags:</h3>
-        <ul>
-          {logement.tags.map((tag, index) => (
-            <li key={index} className='tag'>{tag}</li>
-          ))}
-        </ul>
-      </div>
+      
     </div>
   );
 }
