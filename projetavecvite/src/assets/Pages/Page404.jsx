@@ -14,6 +14,7 @@ function Error () {
       </div>
       <div className='texts'>
       <p>Oups! La page que vous demandez n'existe pas</p>
+      <Link to="/" className='return'><h3>Retournez sur la page d'accueil</h3></Link>
       
       </div>
       </>

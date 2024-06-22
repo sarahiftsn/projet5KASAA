@@ -3,6 +3,7 @@ import Dropdown from '../../components/Dropdown';
 import { FaChevronUp } from 'react-icons/fa';
 import  './About.scss';
 
+
 function About() {
   return (
     <div role="main">
