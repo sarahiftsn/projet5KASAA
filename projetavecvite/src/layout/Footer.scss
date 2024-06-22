@@ -1,24 +1,36 @@
-footer{
+footer {
+  .bann {
+    background-color: black;
+    width: 100%; // Utilisez un pourcentage pour que la largeur soit relative
+    height: 13.0625em; // Conversion de 209px en em
+    margin-top: 2.5em; // Conversion de 40px en em
+  }
 
+  .kasalogo {
+    margin-top: 3.75em; // Conversion de 60px en em
+    margin-left: 36.25em;
+  }
 
+  .kasap {
+    color: white;
+    margin-left: 27.125em;
+    font-size: 1.2em;
+  }
+
+  @media screen and (max-width: 768px) {
     .bann {
-        background-color: black;
-        width: 1440px;
-        height: 209px;
-        margin-top: 40px;
-        
-        
-        
-        
-      }
+      width: 220%; // Ajustez la largeur pour les écrans plus petits
+      height: 20em; // Ajustez la hauteur pour les écrans plus petits
     }
-    .kasalogo{
-        margin-top: 60px;
-        margin-left: 36.25em;
-    
+
+    .kasalogo {
+      margin-top: 1em; // Ajustez le margin-top pour les écrans plus petits
+       // Ajustez le margin-left pour les écrans plus petits
     }
-    .kasap{
-      color: white;
-      margin-left: 27.125em;
-      font-size: 1.2em;
+
+    .kasap {
+      margin-left: 1em; // Ajustez le margin-left pour les écrans plus petits
+      font-size: 1em; // Ajustez la taille de police pour les écrans plus petits
     }
+  }
+}

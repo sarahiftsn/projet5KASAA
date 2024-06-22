@@ -2,6 +2,7 @@ import React from 'react';
 import Logements from './Logements';
 import { Link } from 'react-router-dom';
 import "./Page404.scss";
+import Cards from '../../components/Cards';
 
 
 
