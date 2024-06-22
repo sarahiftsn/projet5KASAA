@@ -25,7 +25,7 @@ function About() {
             
           </div>
         }>
-          <p>Le composant Dropdown permet de montrer ou de cacher du contenu lorsque l'utilisateur clique sur un titre ou une icône.</p>
+          <p>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement descriminatoire ou de perturbation du voisinage entrainera une exclusion de notre platforme.</p>
         </Dropdown>
         <Dropdown className="dropdown-item" title={
           <div className="dropdown-title">
