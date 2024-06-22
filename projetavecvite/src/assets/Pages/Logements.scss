@@ -2,19 +2,19 @@
 
 
    .logement-pictures {
-     margin-top: 30px;
+     margin-top: 1.875em;
    }
  
    .title-host {
      display: flex;
      justify-content: space-between;
      align-items: center;
-     margin-top: 20px; // Ajustez si nécessaire
+     margin-top: 1.25em; // Ajustez si nécessaire
  
      .logement-title {
        font-size: 24px; // Ajustez selon vos besoins
        color:  #FF6060;
-      width: 500px;
+      width: 31.25em;
       height: 70
      }
  
@@ -29,11 +29,11 @@
          object-fit: cover; 
         
          border-radius: 50%;
-         margin-left: 20px; // Espacement entre l'image et le nom
+         margin-left: 1.25em; // Espacement entre l'image et le nom
        }
  
        .host-name {
-         margin-left: 10px; // Espacement entre l'image et le nom
+         margin-left: 0.625em; // Espacement entre l'image et le nom
        }
      }
    }
@@ -54,13 +54,13 @@ ul {
 .logement-tags ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px; /* Ajustez l'espacement entre les tags si nécessaire */
+  gap: 0.5em; /* Ajustez l'espacement entre les tags si nécessaire */
 }
 
 .logement-tags .tag {
   background-color: #FF6060; /* Couleur de fond des tags */
-  padding: 4px 8px; /* Ajustez le padding si nécessaire */
-  border-radius: 10px; /* Ajout d'arrondis aux coins */
+  padding: 0.25em 0.5em; /* Ajustez le padding si nécessaire */
+  border-radius: 0.625em; /* Ajout d'arrondis aux coins */
   color:white;
 }
  
@@ -81,8 +81,8 @@ ul {
 .details{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5px;
-  margin-top: 30px;
+  margin-bottom: 0.313em;
+  margin-top: 1.875em;
  
 }
 .Description  .dropdown-body{
@@ -92,15 +92,14 @@ ul {
 .logement-equipments .dropdown-body{
   color: black;
 }
-.Description  .dropdown-icon{
-  margin-left: 500px;
+.Description .dropdown-icon {
+  margin-left: 31.25em; /* 500px / 16px (base font size) */
   color: white;
-  margin-bottom: 30px;
+  margin-bottom: 1.875em; /* 30px / 16px (base font size) */
 }
-.logement-equipments .dropdown-icon{
-  
-  margin-left: 500px;
+
+.logement-equipments .dropdown-icon {
+  margin-left: 31.25em; /* 500px / 16px (base font size) */
   color: white;
- 
-  margin-bottom: 30px;
+  margin-bottom: 1.875em; /* 30px / 16px (base font size) */
 }

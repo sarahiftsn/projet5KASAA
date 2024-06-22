@@ -1,35 +1,42 @@
 .dropdown {
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    overflow: hidden;
-  
-    &.open .dropdown-body {
-      display: block;
-    }
-  
-    .dropdown-header {
-      background-color: #FF6060;
-      padding: 1rem;
-      cursor: pointer;
-    
-  
-     
-    }
-  
-    .dropdown-body {
-      display: none;
-      padding: 1rem;
-    }
-  }
-  .dropdown-icon{
-    margin-left: 1100px;
-    color: white;
-    margin-top: -60px;
+  margin-bottom: 1rem; /* Gardé en rem car cela semble approprié pour l'espacement */
+  border: 0.063em solid #ccc; /* 1px / 16px (base font size) */
+  border-radius: 0.25em; /* 4px / 16px (base font size) */
+  overflow: hidden;
+
+  &.open .dropdown-body {
+    display: block;
   }
 
-  .dropdown-header title{
-    margin-top: 50px;
+  .dropdown-header {
+    background-color: #FF6060;
+    padding: 1em; /* Utilisation de 'em' pour maintenir une taille relative */
+    cursor: pointer;
   }
-  
-  
+
+  .dropdown-body {
+    display: none;
+    padding: 1em; /* Utilisation de 'em' pour maintenir une taille relative */
+  }
+}
+
+.dropdown-icon {
+  margin-left: 68.75em; /* 1100px / 16px (base font size) */
+  color: white;
+  margin-top: -3.75em; /* -60px / 16px (base font size) */
+}
+
+.dropdown-header title {
+  margin-top: 3.125em; /* 50px / 16px (base font size) */
+}
+
+@media screen and (max-width: 48em) { /* 768px / 16px (base font size) */
+  .dropdown-icon {
+    margin-left: 68.75%; /* 1100px / 16px (base font size) */
+    margin-top: -3.75em; /* -60px / 16px (base font size) */
+  }
+
+  .dropdown-header title {
+    margin-top: 3.125em; /* 50px / 16px (base font size) */
+  }
+}

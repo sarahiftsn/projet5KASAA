@@ -1,7 +1,12 @@
-.main {
+
+  .main {
     padding: 2rem 3rem;
     min-height: 60vh;
-    @media screen and (width <= 768px) {
-      padding: 1rem;
+  
+    @media screen and (max-width: 768px) {
+      max-width: 23.4375em;
+      min-width: 20em;
+      padding: 0em 0em;
+      align-items: center;
     }
   }

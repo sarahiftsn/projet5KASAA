@@ -37,3 +37,13 @@ font-weight: 700;
 font-size: 46px;
 color: #FFFFFF; /* Couleur du texte */
 }
+@media screen and (max-width: 768px) {
+  .bannière {
+    /* Définir l'image de fond */
+    
+    width: 740px;
+    height: 170px;
+    margin-left: 130px;
+    
+  }
+}
