@@ -4,6 +4,7 @@ footer {
     width: 100%; // Utilisez un pourcentage pour que la largeur soit relative
     height: 13.0625em; // Conversion de 209px en em
     margin-top: 2.5em; // Conversion de 40px en em
+    
   }
 
   .kasalogo {
@@ -23,17 +24,33 @@ footer {
   footer {
     
     .bann{
-      width: 103%;
+      width: 104%;
+      height: 209px;
+      
+     
+      
     }
     .kasalogo {
       margin-top: 3.75em; // Conversion de 60px en em
       margin-left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 120px;
+      padding-top: 20px;
+      
     }
   
     .kasap {
       color: white;
       margin: 0;
-      font-size: 1.2em;
+      font-size: 1.3em;
+      text-align: center;
+      margin-top: 40px;
+      flex-wrap: wrap;
+      padding-left: 0;
+      
+      
     }
   
   }

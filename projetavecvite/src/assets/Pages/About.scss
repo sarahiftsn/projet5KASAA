@@ -5,16 +5,10 @@
    margin-top: 3.125em; /* 50px / 16px (base font size) */
    margin-left: 3.125em; /* 50px / 16px (base font size) */
    object-fit: cover;
-   border-radius: 0.1em; /* 1.6px / 16px (base font size) */
+   border-radius: 1.5em; /* 1.6px / 16px (base font size) */
    filter: brightness(0.6); // Réduit la luminosité à 70%
  
-   @media screen and (max-width: 48em) { /* 768px / 16px (base font size) */
-     width: 100%; /* Pour remplir la largeur de l'écran */
-     height: auto;
-     margin-top: 0;
-     margin-left: 0;
-     border-radius: 0; /* Ajustement pour les petits écrans si nécessaire */
-   }
+   
 
  }
  
@@ -22,10 +16,6 @@
    margin-left: 6.25em; /* 100px / 16px (base font size) */
    margin-top: 1.875em; /* 30px / 16px (base font size) */
  
-   @media screen and (max-width: 48em) { /* 768px / 16px (base font size) */
-     margin-left: 0;
-     margin-top: 0;
-   }
  }
  
  .dropdown-title {
@@ -34,9 +24,22 @@
    color: white;
  }
  
- .main {
-   @media screen and (max-width: 48em) { /* 768px / 16px (base font size) */
-     margin-left: 0;
-     margin-top: 0;
-   }
- }
+ 
+ @media screen and (max-width: 768px) {
+  .paysage img {
+    width: 335px; /* 1240px / 16px (base font size) */
+    height: 111px; /* 223px / 16px (base font size) */
+    margin: 0;
+    margin-top: 30px;
+    
+  
+    
+ 
+  }
+  .dropdownn{
+    margin: 0;
+  }
+  
+  
+ 
+}

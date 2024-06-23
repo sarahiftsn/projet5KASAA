@@ -31,12 +31,35 @@
 }
 
 @media screen and (max-width: 48em) { /* 768px / 16px (base font size) */
+  .dropdown {
+   margin-left: 0;
+   margin-right: 0;
+  
+    &.open .dropdown-body {
+      display: block;
+    }
+  
+    .dropdown-header {
+      background-color: #FF6060;
+      padding: 0.5em; /* Utilisation de 'em' pour maintenir une taille relative */
+      cursor: pointer;
+      margin: 0;
+    }
+  
+    .dropdown-body {
+      display: none;
+      padding: 0em; /* Utilisation de 'em' pour maintenir une taille relative */
+    }
+  }
+  
   .dropdown-icon {
-    margin-left: 68.75%; /* 1100px / 16px (base font size) */
+    margin-left: 0em; /* 1100px / 16px (base font size) */
+    color: white;
     margin-top: -3.75em; /* -60px / 16px (base font size) */
   }
-
+  
   .dropdown-header title {
     margin-top: 3.125em; /* 50px / 16px (base font size) */
+    
   }
 }
