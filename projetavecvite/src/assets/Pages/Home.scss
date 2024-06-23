@@ -1,7 +1,27 @@
-@media screen and (max-width: 768px) {
+@import "../../components/Navbar.scss";
+@import "../../layout/Banner.scss";
+@import "../../components/Cards.scss";
+@import "../../layout/Footer.scss";
+
+.home-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px; /* Ajoute un padding pour éviter que le contenu touche les bords */
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    max-width: 23.4375em;
+      min-width:  20em;
+    padding: 0em 0em;
+    align-items: center;
     
-    .card{
-      display: flex;
-      flex-direction: column;
-    }
-    }
+}
+
+.banner,
+.cards,
+.footer {
+  width: 100%;
+  max-width: 100%;
+}
+}

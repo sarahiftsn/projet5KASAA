@@ -1,5 +1,5 @@
 
-
+@import "../../layout/Footer.scss";
 
    .logement-pictures {
      margin-top: 1.875em;
@@ -102,4 +102,14 @@ ul {
   margin-left: 31.25em; /* 500px / 16px (base font size) */
   color: white;
   margin-bottom: 1.875em; /* 30px / 16px (base font size) */
+}
+@media (max-width: 768px) {
+  .details{
+    display: flex;
+    flex-direction: column;
+  }
+  .logement-pictures {
+    margin-top: 7em;
+  }
+  
 }

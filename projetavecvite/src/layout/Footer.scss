@@ -17,20 +17,25 @@ footer {
     font-size: 1.2em;
   }
 
-  @media screen and (max-width: 768px) {
-    .bann {
-      width: 220%; // Ajustez la largeur pour les écrans plus petits
-      height: 20em; // Ajustez la hauteur pour les écrans plus petits
-    }
-
+}
+@media screen and (max-width: 768px) {
+      
+  footer {
+    
+  
     .kasalogo {
-      margin-top: 1em; // Ajustez le margin-top pour les écrans plus petits
-       // Ajustez le margin-left pour les écrans plus petits
+      margin-top: 3.75em; // Conversion de 60px en em
+      margin-left: 0;
     }
-
+  
     .kasap {
-      margin-left: 1em; // Ajustez le margin-left pour les écrans plus petits
-      font-size: 1em; // Ajustez la taille de police pour les écrans plus petits
+      color: white;
+      margin: 0;
+      font-size: 1.2em;
     }
+  
   }
+  
+      
+      
 }

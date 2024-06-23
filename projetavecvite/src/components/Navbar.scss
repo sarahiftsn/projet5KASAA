@@ -6,10 +6,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 1em;
-    margin-top: 40px;
+    margin-top: 2.5em;
   
     .logo {
-      margin-left: 60px;
+      margin-left: 3.75em;
   
       img {
         width: 210.32px;
@@ -24,7 +24,7 @@ nav {
         padding: 0; // Suppression du padding par défaut
     
         li {
-          margin-right: 90px;
+          margin-right: 5.625em;
     
           a {
             color: #000000;
@@ -33,4 +33,41 @@ nav {
         }
       }
     }
-   
+    @media screen and (max-width: 768px) {
+      
+      nav {
+        display: flex;
+       
+        height: 1em;
+        margin-top: 2.5em;
+      
+        .logo {
+          margin-left:0em;
+      
+          img {
+            width: 180.32px;
+            height: 62px;
+           
+          }
+        }
+        .nav-menu {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            padding: 0; // Suppression du padding par défaut
+        
+            li {
+              margin-right: 5.625em;
+        
+              a {
+                color: #000000;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+  
+      
+      
+    }
+  

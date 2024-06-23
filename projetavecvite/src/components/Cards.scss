@@ -60,21 +60,24 @@ $card-title-color: #fff; // Title text color
 
 @media screen and (max-width: 768px) {
   .cards {
-    width: 100%; // La largeur prend tout l'espace disponible
-    
+    min-width: 600px; // La largeur prend tout l'espace disponible
+    min-width: 200px;
     align-items: center; // Centrer les cartes horizontalement
-    margin-left: 400px; // Supprimer le margin-left pour les petits écrans
+    // Supprimer le margin-left pour les petits écrans
     margin-top: $gap; // Utiliser l'espacement comme marge supérieure
+    display: flex;
+    justify-content: center;
+    margin: 0;
   }
 
   .card {
     width: 100%; // La largeur prend tout l'espace disponible
-    margin-left: 0; // Supprimer le margin-left pour les petits écrans
+    margin: 0;// Supprimer le margin-left pour les petits écrans
     margin-top: $gap; // Utiliser l'espacement comme marge supérieure
 
     &-image {
-      width: 46em;
-    height: 11em;
+      width: 100%;
+      height: auto;
     }
   }
 }
