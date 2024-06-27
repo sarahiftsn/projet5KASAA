@@ -14,12 +14,12 @@ const Navbar = () => {
         </NavLink>
         <ul className="nav-menu">
           <li className="li">
-          <NavLink to="/">
+          <NavLink exact to="/" activeClassName="active">
             Accueil
             </NavLink>
             </li>
           <li className="li">
-          <NavLink to="/about">
+          <NavLink to="/about" activeClassName="active">
               À propos
               </NavLink>
             </li>

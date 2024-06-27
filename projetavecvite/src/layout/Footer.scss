@@ -28,7 +28,7 @@ footer {
     
     .bann{
       width: 96%;
-      height: 15em;
+      height: 16em;
       margin-top: 0.9em;
       position: absolute;
       margin-left: 0;
@@ -71,10 +71,10 @@ footer {
 @media (max-width: 375px) {
   footer {
     .bann {
-      height: 12em; // Permet de s'adapter au contenu
+      height: 13em; // Permet de s'adapter au contenu
       padding: 1em; // Ajouter du padding pour un meilleur espacement
       margin-top: 110px;
-      width: 89%;
+      width: 88%;
     }
 
     .kasalogo {

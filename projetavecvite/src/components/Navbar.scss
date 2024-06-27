@@ -30,6 +30,9 @@ nav {
           a {
             color: #000000;
             text-decoration: none;
+            &.active {
+              text-decoration: underline; // Style pour le lien actif
+            }
           }
         }
       }
