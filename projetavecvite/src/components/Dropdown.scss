@@ -31,43 +31,4 @@
   margin-top: 1.125em; /* 50px / 16px (base font size) */
 }
 
-@media screen and (max-width: 48em) { /* 768px / 16px (base font size) */
-  .dropdown {
-   margin-left: 0;
-   margin-right: 0;
-  
-    &.open .dropdown-body {
-      display: block;
-    }
-  
-    .dropdown-header {
-      background-color: #FF6060;
-      padding: 0; /* Utilisation de 'em' pour maintenir une taille relative */
-      cursor: pointer;
-      margin: 0;
-     
-    }
-  
-    .dropdown-body {
-      display: none;
-      padding: 0em 0em;
-      font-size: 0.70em;
-      
-    }
-  }
-  
-  .dropdown-icon {
-    margin-left: 20em; /* 1100px / 16px (base font size) */
-    color: white;
-    
-    
 
-    
-
-  }
-  
-  .dropdown-header title {
-    margin-top: 3.125em; /* 50px / 16px (base font size) */
-    
-  }
-}

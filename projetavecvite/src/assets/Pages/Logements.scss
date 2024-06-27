@@ -183,3 +183,70 @@ ul {
 }
 
 }
+
+@media (max-width: 1024px) and (min-width: 768px) { 
+
+  .details{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.313em;
+    margin-top: 0.875em;
+    width: 100%;
+  }
+  .logement-host{
+    flex-direction: row-reverse;
+    margin: 0;
+  }
+  .logement-rating .rating{
+    margin-top: -2.5em;
+    
+  }
+  .title-host{
+    display: flex;
+    margin-top: 0;
+    flex-direction: row-reverse;
+    margin: 0;
+  }
+  .details .dropdown{
+    margin-bottom: 0.5rem;
+  }
+  .details .dropdown-header {
+    background-color: #FF6060;
+    padding: 5px; /* Utilisation de 'em' pour maintenir une taille relative */
+    cursor: pointer;
+    margin: 0;
+    width: 100%;
+   
+  }
+  .logement-title{
+    font-size: 18px;
+    color: #FF6060;
+
+  }
+  .Description{
+  
+    width: 100%;
+  }
+    
+  .logement-equipments{
+  
+    width: 100%;
+   
+  }
+  .Description .dropdown-icon {
+    margin-left: 31.25em; /* 500px / 16px (base font size) */
+    color: white;
+    margin-bottom: 1.875em; /* 30px / 16px (base font size) */
+  }
+  
+  .logement-equipments .dropdown-icon {
+    margin-left: 31.25em; /* 500px / 16px (base font size) */
+    color: white;
+    margin-bottom: 1.875em; /* 30px / 16px (base font size) */
+  }
+  .logement-tags ul {
+    width: 70px;
+    height: 30px;
+  
+  }
+}

@@ -60,14 +60,15 @@ $card-title-color: #fff; // Title text color
 
 @media screen and (max-width: 768px) {
   .cards {
-    min-width: 600px; // La largeur prend tout l'espace disponible
-    min-width: 200px;
+  width: 100%;
     align-items: center; // Centrer les cartes horizontalement
     // Supprimer le margin-left pour les petits écrans
     margin-top: $gap; // Utiliser l'espacement comme marge supérieure
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin-left: -5px;
+    margin-right: 0;
+
   }
 
   .card {
@@ -78,23 +79,40 @@ $card-title-color: #fff; // Title text color
     &-image {
       width: 100%;
       height: auto;
+      margin-left: -5px;
+    }
+    &-content {
+      position: absolute;
+      bottom: 0;
+      left: 2;
+      width: 50%;
+      padding: 0;
+      margin: 0%;
+      .card-title {
+        margin-right: 600px;
+  
+      }
     }
   }
 }
 @media (max-width: 1024px) and (min-width: 768px) {
   .cards {
-    min-width: 22em; // La largeur prend tout l'espace disponible
+    width: 98%; // La largeur prend tout l'espace disponible
     margin-left: 0;
     align-items: center; // Centrer les cartes horizontalement
-    flex-wrap: wrap;
+    margin: 0;
+   margin-bottom: 10em;
+    
 
   .card {
     width: 100%; // La largeur prend tout l'espace disponible
     margin: 0;// Supprimer le margin-left pour les petits écrans
     margin-top: $gap; // Utiliser l'espacement comme marge supérieure
+    flex-wrap: nowrap;
+    justify-content: space-between;
 
     &-image {
-      width: 60%;
+      width: 100%;
       height: auto;
       margin-left: 0;
     }
@@ -111,6 +129,7 @@ $card-title-color: #fff; // Title text color
 
     }
   }
+
 }
 
 }

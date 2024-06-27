@@ -11,73 +11,64 @@
    
 
  }
- 
- .dropdownn {
-   margin-left: 4.5em; /* 100px / 16px (base font size) */
-   margin-top: 3em; /* 30px / 16px (base font size) */
-   width: 1023px;
-   
-   padding: 0;
+ .dropdownn .dropdown-header{
+  width: 100%;
+  height: 2em;
 
-  
+}
+.dropdownn{
+  width: 80%;
+ margin-left: 100px;
+ margin-top: 20px;
+}
+
  
- }
- .dropdown-item{
-  
- }
+ 
  
  .dropdown-title {
    display: flex;
-   justify-content: space-between;
+ 
    color: white;
+   margin-bottom: 0.313em;
+  margin-top: 0.875em;
 
  }
 
- .main{
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 15px; /* Ajoute un padding pour éviter que le contenu touche les bords */
- }
- 
- 
- @media screen and (max-width: 932px) {
 
-  .aboutcontainer{
-    max-width: 15em;
-      min-width:  10em;
-    padding: 0em 0em;
-    
-  .paysage img {
-    width: 21.5em; /* 1240px / 16px (base font size) */
-    height: 10em; /* 223px / 16px (base font size) */
-    margin: 0;
-    margin-top: 40px;
-    
-  
-    
  
-  }
-  .dropdownn{
-    margin: 0;
-    margin-top: 1.75em;
-    width: 21.938em;
-    height: 1.875em;
-    padding: 0;
-    margin-left: 0px;
-    margin-right: 0px;
-    
-  }
+ 
+ @media screen and (max-width: 768px) {
+
+  
+    .dropdownn .dropdown-header{
+      width: 100%;
+      height: 2em;
+    }
+    .dropdownn{
+      margin-top: 2em;
+      margin-left: 0;
+      width: 100%;
+    }
+    .paysage img {
+      width: 100%; /* 1240px / 16px (base font size) */
+      margin: 0;
+     
+   
+    }
+
+    .dropdownn .dropdown-icon {
+      margin-left: 19em; /* 1100px / 16px (base font size) */
+      color: white;
+     padding-top: -8em;
+     
+    }
   
   
  
 }
 
-.footer
- {
-  width: 100%;
-  max-width: 100%;
-}
-}
+
+
 
 
 
