@@ -30,6 +30,7 @@ $mobile-margin-top: 4.37em;
   font-size: 18px;
   @include center-content;
   margin-top: $desktop-margin-top;
+  margin-bottom: 1.5em;
 }
 
 @media screen and (max-width: 768px) {
