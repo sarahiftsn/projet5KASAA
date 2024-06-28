@@ -1,54 +1,61 @@
-.img img{
+$primary-color: #FF6060;
+$desktop-margin-top: 70px;
+$mobile-margin-top: 4.37em;
+
+@mixin center-content {
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  img {
     margin-top: 40px;
     width: 550px;
     height: 263px;
     margin-left: 290px;
+  }
 }
-.texts p{
+
+.texts {
+  p {
     font-size: 36px;
     margin-left: 230px;
-    color: #FF6060;
-    margin-top: 70px;
-
+    color: $primary-color;
+    margin-top: $desktop-margin-top;
+  }
 }
 
-.return{
-    color:black;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    margin-top: 70px;
+.return {
+  color: black;
+  font-size: 18px;
+  @include center-content;
+  margin-top: $desktop-margin-top;
 }
 
 @media screen and (max-width: 768px) {
-    .img img{
-        margin-top: 4.8em;
-        width: 210px;
-        height: 100px;
-        margin-left: 3.925em;
-        display: flex;
-        justify-content: center;
-        
+  .img {
+    img {
+      margin-top: 4.8em;
+      width: 210px;
+      height: 100px;
+      margin-left: 3.925em;
+      @include center-content;
     }
-    .texts p{
-        font-size: 1.25em;
-        margin-left: 1.3em;
-        color: #FF6060;
-        margin-top: 4.37em;
-        text-align: center;
-    
-    }
-    
-    .return{
-        color:black;
-        font-size: 0.8em;
-        text-align: center;
-        margin-top: 4.37em;
-    }
-    
-      
-   
-    
-        
-        
   }
+
+  .texts {
+    p {
+      font-size: 1.25em;
+      margin-left: 1.3em;
+      color: $primary-color;
+      margin-top: $mobile-margin-top;
+      text-align: center;
+    }
+  }
+
+  .return {
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: $mobile-margin-top;
+  }
+}
