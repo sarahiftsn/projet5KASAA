@@ -52,7 +52,7 @@ function Logements() {
       
       <div className='details'>
         <div className='Description'>
-          <Dropdown className="dropdown-item logement-dropdown" title={
+          <Dropdown  title={
             <div className="dropdown-title1"> <p>Description</p> </div>
           }>
             <div className='logement-description'>{logement.description}</div>
