@@ -68,7 +68,7 @@ $card-title-color: #fff; // Title text color
     justify-content: center;
     margin-left: -5px;
     margin-right: 0;
-    margin-bottom: 9em;
+    margin-bottom: 2em;
 
   }
 
@@ -97,43 +97,5 @@ $card-title-color: #fff; // Title text color
   }
 }
 @media (max-width: 375px) { .cards{
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }}
-@media (max-width: 1024px) and (min-width: 768px) {
-  .cards {
-    width: 98%; // La largeur prend tout l'espace disponible
-    margin-left: 0;
-    align-items: center; // Centrer les cartes horizontalement
-    margin: 0;
-   margin-bottom: 10em;
-    
-
-  .card {
-    width: 100%; // La largeur prend tout l'espace disponible
-    margin: 0;// Supprimer le margin-left pour les petits écrans
-    margin-top: $gap; // Utiliser l'espacement comme marge supérieure
-    flex-wrap: nowrap;
-    justify-content: space-between;
-
-    &-image {
-      width: 100%;
-      height: auto;
-      margin-left: 0;
-    }
-  }
-  &-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 60%;
-    padding: 0;
-    margin: 0%;
-    .card-title {
-      margin-right: 800px;
-
-    }
-  }
-
-}
-
-}

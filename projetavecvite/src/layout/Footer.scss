@@ -18,6 +18,7 @@ footer {
     color: white;
     margin-left: 27.125em;
     font-size: 1.2em;
+    
   }
 
 }
@@ -56,7 +57,9 @@ footer {
       text-align: center;
       
       flex-wrap: wrap;
-      padding-left: 0;
+      padding-left: 5em;
+      max-width: 150px; /* Ajustez cette valeur en fonction de vos besoins */
+      word-wrap: break-word;
       
       
     }
@@ -72,22 +75,26 @@ footer {
 @media (max-width: 375px) {
   footer {
     .bann {
-      height: 13em; // Permet de s'adapter au contenu
-      padding: 1em; // Ajouter du padding pour un meilleur espacement
+      height: 14em; // Permet de s'adapter au contenu
+      
       margin-top: 20px;
-      width: 88%;
+      width: 100%;
     }
 
     .kasalogo {
       margin-top: 1em; // Réduire l'espace supérieur
       margin-left: 0; // Centrer horizontalement
-      width: 20%; // Ajuster la largeur du logo
+      width: 30%; // Ajuster la largeur du logo
+      padding-top: 1em;
     }
 
     .kasap {
       margin-left: 0; // Centrer horizontalement
-      font-size: 0.75em; // Ajuster la taille de la police
-      padding: 0.5em; // Ajouter du padding pour un meilleur espacement
+      font-size: 1em; // Ajuster la taille de la police
+      padding-left: 7em; // Ajouter du padding pour un meilleur espacement
+      max-width: 150px; /* Ajustez cette valeur en fonction de vos besoins */
+      word-wrap: break-word;
+      padding-top: 1em;
     }
   }
 }
