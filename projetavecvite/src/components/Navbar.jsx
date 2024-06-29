@@ -20,7 +20,7 @@ const Navbar = () => {
             </li>
           <li className="li">
           <NavLink to="/about" activeClassName="active">
-              À propos
+              A Propos
               </NavLink>
             </li>
           </ul>

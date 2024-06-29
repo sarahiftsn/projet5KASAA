@@ -77,10 +77,15 @@ ul {
 .Description {
   color: antiquewhite;
   width: 37.375em;
+  
 
   .dropdown-header {
     width: 582px;
-    height: 40px;
+    height: 1em;
+    
+  }
+  .dropdown-title1{
+    margin-top: -1em;
   }
 
   .dropdown-body {
@@ -88,19 +93,26 @@ ul {
   }
 
   .dropdown-icon {
-    margin-left: 31.25em; /* 500px / 16px (base font size) */
+    margin-left: 33.95em; /* 500px / 16px (base font size) */
     color: white;
-    margin-bottom: 1.875em; /* 30px / 16px (base font size) */
+    margin-bottom: 0.975em; /* 30px / 16px (base font size) */
   }
+  
 }
 
 .logement-equipments {
   color: aliceblue;
   width: 37.375em;
+  
 
   .dropdown-header {
     width: 582px;
-    height: 40px;
+    height: 1em;
+    
+    
+  }
+  .dropdown-title1{
+    margin-top: -1em;
   }
 
   .dropdown-body {
@@ -108,9 +120,10 @@ ul {
   }
 
   .dropdown-icon {
-    margin-left: 31.25em; /* 500px / 16px (base font size) */
+    margin-left: 34.25em; /* 500px / 16px (base font size) */
     color: white;
-    margin-bottom: 1.875em; /* 30px / 16px (base font size) */
+    margin-bottom: 0.995em; /* 30px / 16px (base font size) */
+   
   }
 }
 
@@ -136,6 +149,7 @@ ul {
         padding: 5px; /* Utilisation de 'em' pour maintenir une taille relative */
         cursor: pointer;
         margin: 0;
+        height: 2em;
       }
 
       .dropdown-icon {
@@ -210,6 +224,7 @@ ul {
         cursor: pointer;
         margin: 0;
         width: 100%;
+        
       }
 
       .dropdown-icon {
