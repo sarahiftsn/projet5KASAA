@@ -1,5 +1,16 @@
+$dropdown-bg-color: #FF6060;
+$dropdown-border-color: #ccc;
+$dropdown-header-padding: 1em;
+$dropdown-icon-color: white;
+$dropdown-body-padding: 1em;
+$dropdown-header-title-margin-top: 1.125em; // 50px / 16px (base font size)
 
-@import "../../layout/Footer.scss";
+// Mixin for common styles
+@mixin dropdown-header-styles {
+  background-color: $dropdown-bg-color;
+  padding: $dropdown-header-padding;
+  cursor: pointer;
+}
 
 .logement-pictures {
   margin-top: 1.875em;
@@ -21,7 +32,7 @@
     font-size: 24px; // Ajustez selon vos besoins
     color: #FF6060;
     width: 31.25em;
-    height: 70;
+    height: 70px;
   }
 
   .logement-host {
@@ -74,120 +85,72 @@ ul {
   }
 }
 
-.Description {
-  color: antiquewhite;
-  width: 37.375em;
-  
-
-  
-  
-
-  .dropdown-header {
-    width: 582px;
-    height: 1em;
-    
-  }
-  .dropdown-title1{
-    margin-top:-1em;
-    display: flex;
-   
-  }
-
-  .dropdown-body {
-    color: black;
-  }
-
-  .dropdown-icon {
-    
-    color: white;
-    margin-left: 34em;
-    padding: 0;
-  
-    margin-bottom: 1.895em;
-    
-  }
-  
-}
-
-.logement-equipments {
-  color: aliceblue;
-  width: 37.375em;
-  
-  
-
-  .dropdown-header {
-    width: 582px;
-    height: 1em;
-    
-    
-  }
-  .dropdown-title1{
-    margin-top: -1em;
-    display: flex;
-   justify-content: space-between;
-    align-items: center;
-
-  }
-
-  .dropdown-body {
-    color: black;
-  }
-
-  .dropdown-icon {
-    margin-left: 34.25em; /* 500px / 16px (base font size) */
-    color: white;
-    margin-bottom: 0.995em; /* 30px / 16px (base font size) */
-   
-  }
-}
-
 .details {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.313em;
-  margin-top: 1.875em;
-}
+  margin-top: 0.875em;
 
+  .Description, .logement-equipments {
+    width: 37em;
+  }
+
+  .dropdown {
+    margin-bottom: 1rem; // Gardé en rem car cela semble approprié pour l'espacement
+    border: 0.063em solid $dropdown-border-color; // 1px / 16px (base font size)
+    border-radius: 0.25em; // 4px / 16px (base font size)
+    overflow: hidden;
+
+    &.open .dropdown-body {
+      display: block;
+    }
+
+    .dropdown-header {
+      @include dropdown-header-styles;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 2.3em;
+    }
+
+    .dropdown-body {
+      display: none;
+      padding: $dropdown-body-padding; // Utilisation de 'em' pour maintenir une taille relative
+    }
+
+    .dropdown-title {
+      margin-top: $dropdown-header-title-margin-top; // 50px / 16px (base font size)
+    }
+
+    .dropdown-icon {
+      color: $dropdown-icon-color;
+    }
+  }
+}
 @media (max-width: 768px) {
   .details {
-    display: flex;
     flex-direction: column;
-    margin-bottom: 0.313em;
-    margin-top: 0.875em;
+
+    .Description, .logement-equipments {
+      width: 100%;
+
+      .dropdown-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 2em; // Ajuster pour la taille en version mobile
+        background-color: $dropdown-bg-color;
+        padding: 5px; // Utilisation de 'em' pour maintenir une taille relative
+      }
+
+      .dropdown-icon {
+        margin-left: 0; // Supprimez la marge gauche
+        margin-top: 0; // Supprimez la marge haute
+      }
+    }
 
     .dropdown {
       margin-bottom: 0.5rem;
-
-      .dropdown-header {
-        background-color: #FF6060;
-        padding: 5px; /* Utilisation de 'em' pour maintenir une taille relative */
-        cursor: pointer;
-        margin: 0;
-        height: 2em;
-      }
-
-      
-    }
-    .Description {
-      width: 99%;
-  
-      .dropdown-icon {
-        margin-left: 23.25em; /* 500px / 16px (base font size) */
-        color: white;
-        
-        margin-top: -50em;
-      }
-    }
-  
-    .logement-equipments {
-      width: 99%;
-  
-      .dropdown-icon {
-        margin-left: 23.25em; /* 500px / 16px (base font size) */
-        color: white;
-        margin-top: -50em;
-       
-      }
     }
   }
 
@@ -201,76 +164,17 @@ ul {
   }
 
   .title-host {
-    display: flex;
-    margin-top: 0;
     flex-direction: row-reverse;
     margin: 0;
   }
 
   .logement-title {
     font-size: 18px;
-    color: #FF6060;
+    color: $dropdown-bg-color;
   }
-
-  
 
   .logement-tags ul {
     width: 70px;
     height: 30px;
   }
 }
-
-@media only screen and (max-width: 414px) {  
-  .details {
-    
-  .Description {
-    
-    .dropdown-icon {
-      margin-left: 21.5em; /* 500px / 16px (base font size) */
-      color: white;
-      
-      margin-top: -51em;
-    }
-  }
-
-  .logement-equipments {
-    .dropdown-icon {
-      margin-left: 21.5em; /* 500px / 16px (base font size) */
-      color: white;
-      margin-top: -50em;
-     
-    }
-  }
-}
-
-}
-
-@media (max-width: 375px) {
- 
-    .details {
-      
-      .Description {
-        
-        .dropdown-icon {
-          margin-left: 20.5em; /* 500px / 16px (base font size) */
-          color: white;
-          
-          margin-top: -51em;
-        }
-      }
-    
-      .logement-equipments {
-        .dropdown-icon {
-          margin-left: 20.5em; /* 500px / 16px (base font size) */
-          color: white;
-          margin-top: -50em;
-         
-        }
-      }
-    }
-  
-  
-
-}
-  
-  

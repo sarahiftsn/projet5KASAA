@@ -1,10 +1,7 @@
-// Variables SCSS
 $dropdown-bg-color: #FF6060;
 $dropdown-border-color: #ccc;
 $dropdown-header-padding: 1em;
 $dropdown-icon-color: white;
-$dropdown-icon-margin-left: 60.75em; // 1100px / 16px (base font size)
-$dropdown-icon-margin-top: -5.75em; // -60px / 16px (base font size)
 $dropdown-body-padding: 1em;
 $dropdown-header-title-margin-top: 1.125em; // 50px / 16px (base font size)
 
@@ -27,21 +24,21 @@ $dropdown-header-title-margin-top: 1.125em; // 50px / 16px (base font size)
 
   .dropdown-header {
     @include dropdown-header-styles;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .dropdown-body {
     display: none;
     padding: $dropdown-body-padding; // Utilisation de 'em' pour maintenir une taille relative
   }
-}
 
-.dropdown-icon {
-  margin-left: $dropdown-icon-margin-left; // 1100px / 16px (base font size)
-  color: $dropdown-icon-color;
-  margin-top: $dropdown-icon-margin-top; // -60px / 16px (base font size)
-  padding-bottom: 1em;
-}
+  .dropdown-title {
+    margin-top: $dropdown-header-title-margin-top; // 50px / 16px (base font size)
+  }
 
-.dropdown-header title {
-  margin-top: $dropdown-header-title-margin-top; // 50px / 16px (base font size)
+  .dropdown-icon {
+    color: $dropdown-icon-color;
+  }
 }
