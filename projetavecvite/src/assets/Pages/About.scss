@@ -1,5 +1,3 @@
-@import "../../layout/Footer.scss";
-
 .aboutcontainer {
   .paysage {
     img {
@@ -15,69 +13,76 @@
 
   .dropdownn {
     width: 80%;
-    margin-left: 100px;
+    margin-left: 100px; /* Ajustez selon vos besoins */
     margin-top: 20px;
 
-    .dropdown-header {
+    .dropdown {
       width: 100%;
-      height: 1em;
+      border: 0.063em solid #ccc; /* Bordure du dropdown */
+      border-radius: 0.25em; /* Arrondi des coins */
 
+      .dropdown-header {
+        background-color: #FF6060; /* Couleur de fond de l'en-tête */
+        padding: 1em; /* Espacement intérieur de l'en-tête */
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        height: 1.8em;
+
+       
+      }
+
+      .dropdown-body {
+        display: none;
+        padding: 1em;
+        background-color: #f9f9f9; /* Couleur de fond du corps du dropdown */
+        border-top: 0.063em solid #ccc; /* Bordure supérieure */
+      }
+
+      .dropdown-title {
+        margin-top: 1.125em; /* Espacement entre le titre et l'en-tête */
+      }
+
+      .dropdown-icon {
+        color: white;
+        margin-right: 1em; /* Espacement à droite de l'icône */
+      }
     }
 
-    .dropdown-title {
-      display: flex;
-      color: white;
-      margin-bottom: 0.313em;
-      margin-top: -0.275em;
-      
-    }
-
-    .dropdown-icon {
-      display: flex;
-      color: white;
-      margin: 0;
-      justify-content: flex-end;
-      margin-left: 59em;
-      margin-top: -1.5em;
-      
-      
+    .open {
+      .dropdown-body {
+        display: block; /* Affichage du corps du dropdown lorsque ouvert */
+      }
     }
   }
-}
 
-@media screen and (max-width: 768px) {
-  .aboutcontainer {
+  @media screen and (max-width: 768px) {
     .dropdownn {
       margin-top: 2em;
       margin-left: 0;
       width: 100%;
       margin-bottom: 1em;
 
-      .dropdown-header {
-        width: 100%;
-        height: 1em;
-        
+      .dropdown {
+        .dropdown-header {
+          height: 1.5em; /* Ajustez la hauteur selon votre design en version mobile */
+        }
 
-        
-      }
-
-      .dropdown-icon {
-        margin-left: 19em; /* 1100px / 16px (base font size) */
-        color: white;
-        padding-top: -9em;
+        .dropdown-icon {
+          margin-right: 0.5em; /* Ajustement de l'espacement pour la version mobile */
+        }
       }
     }
 
     .paysage {
       img {
-        width: 100%; /* 1240px / 16px (base font size) */
-        margin: 0;
-        height: 11em;
-        margin-top: 2em;
+        width: 100%; /* 100% de la largeur du conteneur parent */
+        height: 11em; /* Hauteur réduite pour la version mobile */
+        margin: 0; /* Réinitialisation des marges */
+        margin-top: 2em; /* Espacement en haut */
       }
     }
   }
-}
-@media (max-width: 430px) {
-   
 }

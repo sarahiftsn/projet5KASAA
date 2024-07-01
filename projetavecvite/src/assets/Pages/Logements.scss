@@ -1,3 +1,4 @@
+// Variables globales pour les styles de dropdown
 $dropdown-bg-color: #FF6060;
 $dropdown-border-color: #ccc;
 $dropdown-header-padding: 1em;
@@ -5,176 +6,160 @@ $dropdown-icon-color: white;
 $dropdown-body-padding: 1em;
 $dropdown-header-title-margin-top: 1.125em; // 50px / 16px (base font size)
 
-// Mixin for common styles
+// Mixin pour les styles communs du header du dropdown
 @mixin dropdown-header-styles {
   background-color: $dropdown-bg-color;
   padding: $dropdown-header-padding;
   cursor: pointer;
 }
 
-.logement-pictures {
-  margin-top: 1.875em;
-}
-
-.logement-location {
-  margin-top: -1em;
-}
-
-.title-host {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-top: -8.25em; // Ajustez si nécessaire
-  margin-bottom: 3em;
-
-  .logement-title {
-    font-size: 24px; // Ajustez selon vos besoins
-    color: #FF6060;
-    width: 31.25em;
-    height: 70px;
+// Styles spécifiques pour la section de logement
+.logement {
+  .logement-pictures {
+    margin-top: 1.875em;
+    @media (max-width: 768px) {margin-left: 0;}
   }
-
-  .logement-host {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-
-    .host-picture {
-      width: 64px; /* Ajustez la taille selon vos besoins */
-      height: 64px; /* Assurez-vous que la hauteur est égale à la largeur pour un cercle parfait */
-      border-radius: 50%; /* Rend l'image circulaire */
-      object-fit: cover;
-      margin-left: 1.25em; // Espacement entre l'image et le nom
-    }
-
-    .host-name {
-      margin-left: 0.625em; // Espacement entre l'image et le nom
-    }
-  }
-}
-
-/* Enlever les puces des listes */
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-/* Styles pour les étoiles de notation */
-.rating {
-  display: flex;
-  margin-top: 1em;
-}
-
-/* Alignement des tags sur une seule ligne avec un espace entre eux */
-.logement-tags {
-  display: flex;
-  justify-content: space-between;
-
-  ul {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 0.5em; /* Ajustez l'espacement entre les tags si nécessaire */
-  }
-
-  .tag {
-    background-color: #FF6060; /* Couleur de fond des tags */
-    padding: 0.25em 0.5em; /* Ajustez le padding si nécessaire */
-    border-radius: 0.625em; /* Ajout d'arrondis aux coins */
-    color: white;
-  }
-}
-
-.details {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.313em;
-  margin-top: 0.875em;
-
-  .Description, .logement-equipments {
-    width: 37em;
-  }
-
-  .dropdown {
-    margin-bottom: 1rem; // Gardé en rem car cela semble approprié pour l'espacement
-    border: 0.063em solid $dropdown-border-color; // 1px / 16px (base font size)
-    border-radius: 0.25em; // 4px / 16px (base font size)
-    overflow: hidden;
-
-    &.open .dropdown-body {
-      display: block;
-    }
-
-    .dropdown-header {
-      @include dropdown-header-styles;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 2.3em;
-    }
-
-    .dropdown-body {
-      display: none;
-      padding: $dropdown-body-padding; // Utilisation de 'em' pour maintenir une taille relative
-    }
-
-    .dropdown-title {
-      margin-top: $dropdown-header-title-margin-top; // 50px / 16px (base font size)
-    }
-
-    .dropdown-icon {
-      color: $dropdown-icon-color;
-    }
-  }
-}
-@media (max-width: 768px) {
-  .details {
-    flex-direction: column;
-
-    .Description, .logement-equipments {
-      width: 100%;
-
-      .dropdown-header {
+.logement-title {
+      font-size: 24px; // Taille de police pour desktop
+      color: #FF6060; // Couleur rouge pour desktop
+      width: 31.25em; // Largeur fixe pour desktop
+      height: 70px; // Hauteur fixe pour desktop
+      @media (max-width: 768px) {
+        font-size: 20px; // Largeur 100% pour mobile
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 2em; // Ajuster pour la taille en version mobile
-        background-color: $dropdown-bg-color;
-        padding: 5px; // Utilisation de 'em' pour maintenir une taille relative
+        flex-wrap: wrap;
+        margin-top: 1em;
+        margin-bottom: 2em;
+        margin-left: 0;
+        width: 100%;
+
       }
 
-      .dropdown-icon {
-        margin-left: 0; // Supprimez la marge gauche
-        margin-top: 0; // Supprimez la marge haute
+     
+    }
+  .logement-location {
+    margin-top: -3em;
+  }
+
+  .title-host {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: -8.25em; // Ajustez si nécessaire
+    margin-bottom: 3em;
+    @media (max-width: 768px) {
+      margin-top: -0.25em;
+      flex-direction: row-reverse;
+      
+    }
+
+    
+
+    .logement-host {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+
+       
+
+      .host-picture {
+        width: 64px; /* Ajustez la taille selon vos besoins */
+        height: 64px; /* Assurez-vous que la hauteur est égale à la largeur pour un cercle parfait */
+        border-radius: 50%; /* Rend l'image circulaire */
+        object-fit: cover;
+        margin-left: 1.25em; // Espacement entre l'image et le nom
+      }
+
+      .host-name {
+        margin-left: 0.625em; // Espacement entre l'image et le nom
+      }
+    }
+  }
+
+  /* Enlever les puces des listes */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  /* Styles pour les étoiles de notation */
+  .rating {
+    display: flex;
+    margin-top: 1em;
+    @media (max-width: 768px){
+      margin-top: -2.5em;
+    }
+  }
+
+  /* Alignement des tags sur une seule ligne avec un espace entre eux */
+  .logement-tags {
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 0.5em; /* Ajustez l'espacement entre les tags si nécessaire */
+    }
+
+    .tag {
+      background-color: #FF6060; /* Couleur de fond des tags */
+      padding: 0.25em 0.5em; /* Ajustez le padding si nécessaire */
+      border-radius: 0.625em; /* Ajout d'arrondis aux coins */
+      color: white;
+    }
+  }
+
+  .details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.313em;
+    margin-top: 0.875em;
+
+    .Description, .logement-equipments {
+      width: 37em; // Largeur fixe pour desktop
+
+      @media (max-width: 768px) {
+        width: 100%; // Largeur 100% pour mobile
       }
     }
 
     .dropdown {
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem; // Gardé en rem car cela semble approprié pour l'espacement
+      border: 0.063em solid $dropdown-border-color; // 1px / 16px (base font size)
+      border-radius: 0.25em; // 4px / 16px (base font size)
+      overflow: hidden;
+
+      &.open .dropdown-body {
+        display: block;
+      }
+
+      .dropdown-header {
+        @include dropdown-header-styles;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 2.3em;
+      }
+
+      .dropdown-body {
+        display: none;
+        padding: $dropdown-body-padding; // Utilisation de 'em' pour maintenir une taille relative
+      }
+
+      .dropdown-title {
+        margin-top: $dropdown-header-title-margin-top; // 50px / 16px (base font size)
+      }
+
+      .dropdown-icon {
+        color: $dropdown-icon-color;
+      }
     }
-  }
 
-  .logement-host {
-    flex-direction: row-reverse;
-    margin: 0;
-  }
-
-  .logement-rating .rating {
-    margin-top: -2.5em;
-  }
-
-  .title-host {
-    flex-direction: row-reverse;
-    margin: 0;
-  }
-
-  .logement-title {
-    font-size: 18px;
-    color: $dropdown-bg-color;
-  }
-
-  .logement-tags ul {
-    width: 70px;
-    height: 30px;
+    @media (max-width: 768px) {
+      flex-direction: column; // Ajustement pour la disposition des éléments en version mobile
+      margin-bottom: 0.5rem; // Ajustement pour la marge en version mobile
+    }
   }
 }
