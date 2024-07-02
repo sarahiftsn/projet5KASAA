@@ -1,7 +1,9 @@
 .star-filled {
   color:  #FF6060;; /* or any color you prefer for filled stars */
 }
-
+.star {
+  margin-right: 0.3em; // Ajouter de l'espace entre les étoiles
+}
 .star-empty {
   color: #dcdcdc; /* or any color you prefer for empty stars */
 }

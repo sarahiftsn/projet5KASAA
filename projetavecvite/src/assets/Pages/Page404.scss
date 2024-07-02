@@ -37,8 +37,8 @@ $mobile-margin-top: 4.37em;
   .img {
     img {
       margin-top: 4.8em;
-      width: 210px;
-      height: 100px;
+      width: 60%;
+      height: 6em;
       margin-left: 3.925em;
       @include center-content;
     }
@@ -58,5 +58,6 @@ $mobile-margin-top: 4.37em;
     font-size: 0.8em;
     text-align: center;
     margin-top: $mobile-margin-top;
+    
   }
 }

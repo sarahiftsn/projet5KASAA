@@ -4,7 +4,7 @@ $dropdown-border-color: #ccc;
 $dropdown-header-padding: 1em;
 $dropdown-icon-color: white;
 $dropdown-body-padding: 1em;
-$dropdown-header-title-margin-top: 1.125em; // 50px / 16px (base font size)
+$dropdown-header-title-margin-top: 0.125em; // 50px / 16px (base font size)
 
 // Mixin pour les styles communs du header du dropdown
 @mixin dropdown-header-styles {
@@ -18,6 +18,12 @@ $dropdown-header-title-margin-top: 1.125em; // 50px / 16px (base font size)
   .logement-pictures {
     margin-top: 1.875em;
     @media (max-width: 768px) {margin-left: 0;}
+  }
+  .logement-pictures img {
+    width: 100%; // S'adapte à la largeur de son conteneur parent
+    height: auto; // Maintient le ratio d'aspect
+    max-height: 600px; // Définissez une hauteur maximale
+    object-fit: cover; // S'assure que l'image couvre toute la zone définie
   }
 .logement-title {
       font-size: 24px; // Taille de police pour desktop
@@ -140,7 +146,7 @@ $dropdown-header-title-margin-top: 1.125em; // 50px / 16px (base font size)
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 2.3em;
+        height: 1.3em;
       }
 
       .dropdown-body {
@@ -150,6 +156,7 @@ $dropdown-header-title-margin-top: 1.125em; // 50px / 16px (base font size)
 
       .dropdown-title {
         margin-top: $dropdown-header-title-margin-top; // 50px / 16px (base font size)
+        color: white;
       }
 
       .dropdown-icon {
