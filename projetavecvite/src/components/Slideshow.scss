@@ -3,7 +3,7 @@ $slideshow-mobile-height: 15.25em;
 $btn-padding: 1em;
 $btn-color: white;
 $btn-font-size: 1.12em;
-$btn-background-color: rgba(0, 0, 0, 0.5);
+$btn-background-color: transparent;
 $btn-background-hover: rgba(0, 0, 0, 0.8);
 $slide-numbering-bg: rgba(0, 0, 0, 0.5);
 $slide-numbering-color: white;
@@ -42,7 +42,8 @@ $slide-numbering-radius: 0.75em;
   }
 
   .slide {
-    display: none;
+    display: block;
+    
 
     &.active {
       display: block;
@@ -59,15 +60,22 @@ $slide-numbering-radius: 0.75em;
   .prev,
   .next {
     @include btn-styles;
+    width: 47px; // Ajuste la largeur du bouton
+    height: 80px;
+    
 
     &.prev {
       left: 10px; // Position à gauche de l'image
       border-radius: 3px 0 0 3px;
+    
+      
+
     }
 
     &.next {
       right: 10px; // Position à droite de l'image
       border-radius: 0 3px 3px 0;
+   
     }
   }
 

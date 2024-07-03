@@ -1,6 +1,6 @@
-import React from 'react'; // Importer la bibliothèque React
-import './Cards.scss'; // Importer les styles spécifiques pour ce composant
-import logements from '../logements.json'; // Importer les données des logements depuis un fichier JSON
+import React from 'react'; 
+import './Cards.scss'; 
+import logements from '../logements.json'; 
 
 import { Link } from 'react-router-dom'; // Importer le composant Link depuis react-router-dom pour la navigation
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Dropdown.scss';
-import { FaChevronUp, FaChevronDown } from 'react-icons/fa';
+import { FaChevronDown } from 'react-icons/fa';
 
 function Dropdown({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,9 +13,15 @@ function Dropdown({ title, children }) {
     <div className={`dropdown ${isOpen ? 'open' : ''}`}>
       <div className="dropdown-header" onClick={toggleDropdown}>
         <span className="dropdown-title">{title}</span>
-        {isOpen ? <FaChevronDown className="dropdown-icon" /> : <FaChevronUp className="dropdown-icon" />}
+ {/* Lorsque isOpen est false (c'est-à-dire que le dropdown est fermé), la classe rotate est appliquée */}
+       
+        <FaChevronDown className={`dropdown-icon ${isOpen ? '' : 'rotate'}`} />
       </div>
-      {isOpen && <div className="dropdown-body">{children}</div>}
+      <div className="dropdown-body">
+        <div className={`dropdown-content ${isOpen ? 'open' : 'close'}`}>
+          {children}
+        </div>
+      </div>
     </div>
   );
 }

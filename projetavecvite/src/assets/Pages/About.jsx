@@ -1,8 +1,8 @@
 import React from 'react';
 import Dropdown from '../../components/Dropdown';
-import { FaChevronUp } from 'react-icons/fa';
+
 import  './About.scss';
-import  { useEffect } from 'react';
+
 
 
 function About() {

@@ -26,7 +26,7 @@ $dropdown-header-title-margin-top: 0.125em; // 50px / 16px (base font size)
     object-fit: cover; // S'assure que l'image couvre toute la zone définie
   }
 .logement-title {
-      font-size: 24px; // Taille de police pour desktop
+      font-size: 36px; // Taille de police pour desktop
       color: #FF6060; // Couleur rouge pour desktop
       width: 31.25em; // Largeur fixe pour desktop
       height: 70px; // Hauteur fixe pour desktop
@@ -75,10 +75,23 @@ $dropdown-header-title-margin-top: 0.125em; // 50px / 16px (base font size)
         border-radius: 50%; /* Rend l'image circulaire */
         object-fit: cover;
         margin-left: 1.25em; // Espacement entre l'image et le nom
+        @media (max-width: 768px) {
+          width: 38px; // Largeur 100% pour mobile
+          height: 38px;
+        }
+      
       }
 
       .host-name {
-        margin-left: 0.625em; // Espacement entre l'image et le nom
+        margin-left: 0.625em; 
+        color: #FF6060;
+        max-width: 76px; /* Ajustez cette valeur en fonction de vos besoins */
+      word-wrap: break-word;// Espacement entre l'image et le nom
+      font-size: 18px;
+      @media (max-width: 768px) {
+        font-size: 12px;
+        margin-right: -3.125em; 
+      }
       }
     }
   }
@@ -92,9 +105,9 @@ $dropdown-header-title-margin-top: 0.125em; // 50px / 16px (base font size)
   /* Styles pour les étoiles de notation */
   .rating {
     display: flex;
-    margin-top: 1em;
+    margin-top: 1.9em;
     @media (max-width: 768px){
-      margin-top: -2.5em;
+      margin-top: -1.5em;
     }
   }
 
@@ -147,11 +160,14 @@ $dropdown-header-title-margin-top: 0.125em; // 50px / 16px (base font size)
         justify-content: space-between;
         align-items: center;
         height: 1.3em;
+        
       }
 
       .dropdown-body {
         display: none;
-        padding: $dropdown-body-padding; // Utilisation de 'em' pour maintenir une taille relative
+        background-color: #f9f9f9;
+        padding: $dropdown-body-padding;
+            
       }
 
       .dropdown-title {

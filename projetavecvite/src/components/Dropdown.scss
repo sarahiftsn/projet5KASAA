@@ -1,44 +1,66 @@
+// Variables
 $dropdown-bg-color: #FF6060;
-$dropdown-border-color: #ccc;
 $dropdown-header-padding: 1em;
 $dropdown-icon-color: white;
 $dropdown-body-padding: 1em;
-$dropdown-header-title-margin-top: 1.125em; // 50px / 16px (base font size)
 
-// Mixin for common styles
+// Mixins
 @mixin dropdown-header-styles {
   background-color: $dropdown-bg-color;
   padding: $dropdown-header-padding;
   cursor: pointer;
 }
 
+// Styles for dropdown components
 .dropdown {
-  margin-bottom: 1rem; // Gardé en rem car cela semble approprié pour l'espacement
-  border: 0.063em solid $dropdown-border-color; // 1px / 16px (base font size)
-  border-radius: 0.25em; // 4px / 16px (base font size)
+  margin-bottom: 1rem;
+  border-radius: 0.25em;
   overflow: hidden;
-
-  &.open .dropdown-body {
-    display: block;
-  }
 
   .dropdown-header {
     @include dropdown-header-styles;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .dropdown-body {
-    display: none;
-    padding: $dropdown-body-padding; // Utilisation de 'em' pour maintenir une taille relative
-  }
-
-  .dropdown-title {
-    margin-top: $dropdown-header-title-margin-top; // 50px / 16px (base font size)
+    transition: opacity 4s ease;
   }
 
   .dropdown-icon {
     color: $dropdown-icon-color;
+    font-size: 1.5em;
+    transition: transform 0.3s ease;
+  }
+
+  .rotate {
+    transform: rotate(-180deg);
+  }
+
+  .dropdown-body {
+    .dropdown-content {
+      line-height: 1.6em;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0;
+      opacity: 0;
+      height: 0;
+      
+
+      &.open {
+        padding: $dropdown-body-padding;
+        height: auto;
+        opacity: 1;
+        transform: scaleY(1);
+        transform-origin: top;
+     
+      }
+
+      &.close {
+        padding: 0;
+        height: 0;
+        opacity: 0;
+        transform: scaleY(0);
+        transition: transform 0.7s ease, opacity 0.7s ease, height 0.7s ease, padding 0.7s ease;
+      }
+    }
   }
 }

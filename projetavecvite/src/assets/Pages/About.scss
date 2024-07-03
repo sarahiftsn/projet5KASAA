@@ -54,6 +54,7 @@
     .open {
       .dropdown-body {
         display: block; /* Affichage du corps du dropdown lorsque ouvert */
+       
       }
     }
   }
@@ -79,7 +80,7 @@
     .paysage {
       img {
         width: 100%; /* 100% de la largeur du conteneur parent */
-        height: 11em; /* Hauteur réduite pour la version mobile */
+        height: 9em; /* Hauteur réduite pour la version mobile */
         margin: 0; /* Réinitialisation des marges */
         margin-top: 2em; /* Espacement en haut */
       }

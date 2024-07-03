@@ -2,7 +2,13 @@
   color:  #FF6060;; /* or any color you prefer for filled stars */
 }
 .star {
-  margin-right: 0.3em; // Ajouter de l'espace entre les étoiles
+  margin-right: 0.5em; // Ajouter de l'espace entre les étoiles
+  width: 36px;
+  height: 36px;
+  @media screen and (max-width: 768px) {
+    width: 18px;
+  height: 18px;
+  }
 }
 .star-empty {
   color: #dcdcdc; /* or any color you prefer for empty stars */
