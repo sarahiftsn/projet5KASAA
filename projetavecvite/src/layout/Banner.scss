@@ -19,7 +19,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Noir avec une opacité de 0.3 */
+    background-color: rgba(0, 0, 0, 0.6); /* Noir avec une opacité de 0.3 */
     border-radius: 5%; /* Conserve le même rayon de bordure */
   }
 
@@ -36,6 +36,9 @@
     font-weight: 700;
     font-size: 37px;
     color: #FFFFFF; /* Couleur du texte */
+    
+    text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+
   }
 
   @media screen and (max-width: 768px) {

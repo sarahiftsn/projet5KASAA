@@ -1,66 +1,71 @@
-// Variables
-$dropdown-bg-color: #FF6060;
-$dropdown-header-padding: 1em;
-$dropdown-icon-color: white;
-$dropdown-body-padding: 1em;
-
-// Mixins
-@mixin dropdown-header-styles {
-  background-color: $dropdown-bg-color;
-  padding: $dropdown-header-padding;
+.dropdown-toggle {
+ display: flex;
+ justify-content: space-between;
+ background-color: #FF6060 ;
+  height: 3em;
+  border-radius: 0.3em;
+  padding: 0 1em;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1.3em;
+  color: white;
+  padding-top: 1em;
   cursor: pointer;
-}
+  @media screen and (max-width: 768px){
+    height: 2em;
+    padding: 0;
+   font-size: 1em;
+   padding:0.3em ;
+  
+  
 
-// Styles for dropdown components
-.dropdown {
-  margin-bottom: 1rem;
-  border-radius: 0.25em;
-  overflow: hidden;
 
-  .dropdown-header {
-    @include dropdown-header-styles;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: opacity 4s ease;
-  }
-
-  .dropdown-icon {
-    color: $dropdown-icon-color;
-    font-size: 1.5em;
-    transition: transform 0.3s ease;
-  }
-
-  .rotate {
-    transform: rotate(-180deg);
-  }
-
-  .dropdown-body {
-    .dropdown-content {
-      line-height: 1.6em;
-      width: 100%;
-      box-sizing: border-box;
-      padding: 0;
-      opacity: 0;
-      height: 0;
-      
-
-      &.open {
-        padding: $dropdown-body-padding;
-        height: auto;
-        opacity: 1;
-        transform: scaleY(1);
-        transform-origin: top;
-     
-      }
-
-      &.close {
-        padding: 0;
-        height: 0;
-        opacity: 0;
-        transform: scaleY(0);
-        transition: transform 0.7s ease, opacity 0.7s ease, height 0.7s ease, padding 0.7s ease;
-      }
-    }
   }
 }
+
+.dropdown-content {
+  
+  line-height: 1.60em;
+  width: 100%;
+  box-sizing: border-box;
+  transform: scaleY(0);
+  transform-origin: top;
+  height: 0;
+  padding: 0;
+  opacity: 0;
+  
+}
+
+.arrow-icon {
+  width: 1em;
+  height: 1em;
+  font-size: 1.5em;
+  transition: transform 0.3s ease;
+  @media screen and (max-width: 768px){
+    font-size: 1.6em;
+  }
+
+ 
+}
+
+.rotate {
+  transform: rotate(-180deg);
+}
+
+.open {
+  padding: 1.25em;
+  height: auto;
+  transform: scaleY(1);
+  opacity: 1;
+  transition: transform 0.9s ease, opacity 0.9s ease, height 0.9s ease, padding 0.9s ease;
+}
+
+.close {
+  padding: 0 1.25em;
+  height: 0;
+  transform: scaleY(0);
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease, height 0.2s ease, padding 0.2s ease;
+}
+
+

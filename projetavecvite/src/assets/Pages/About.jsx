@@ -12,7 +12,7 @@ function About() {
       <div className='paysage'>
         <img src="/aboutimg.jpg" alt="paysage" />
       </div>
-      <div className='dropdownn'> {/* Assurez-vous que 'dropdownn' est correct, peut-être 'dropdown' */}
+      <div className='dropdownn'> 
         <Dropdown className="dropdown-item" title={
           <div className="dropdown-title">
             Fiabilité 

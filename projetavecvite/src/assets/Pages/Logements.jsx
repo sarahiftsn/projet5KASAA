@@ -7,10 +7,11 @@ import Slideshow from '../../components/Slideshow';
 import Rating from '../../components/Rating';
 import Error from './Page404';
 
-function Logements() {
-  const { id } = useParams();
-  const navigate = useNavigate();
-  const logement = logements.find((logement) => logement.id === id);
+
+  function Logements() {
+    const { id } = useParams(); // Récupère l'ID de l'URL grâce à useParams()
+    const navigate = useNavigate(); // Fonction de navigation fournie par react-router-dom
+    const logement = logements.find((logement) => logement.id === id); // Recherche du logement par ID dans les données
 
   useEffect(() => {
     if (!logement) {
