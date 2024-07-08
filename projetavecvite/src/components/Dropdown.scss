@@ -1,7 +1,8 @@
+/* Styles pour le bouton de bascule du menu déroulant */
 .dropdown-toggle {
- display: flex;
- justify-content: space-between;
- background-color: #FF6060 ;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FF6060;
   height: 3em;
   border-radius: 0.3em;
   padding: 0 1em;
@@ -11,61 +12,62 @@
   color: white;
   padding-top: 1em;
   cursor: pointer;
-  @media screen and (max-width: 768px){
+  
+  
+  @media screen and (max-width: 768px) {
     height: 3em;
     padding: 0;
     font-size: 1em;
-    padding:0.3em ;
-  
-  
-
-
+    padding: 0.3em;
   }
 }
 
+/* Styles pour le contenu du menu déroulant */
 .dropdown-content {
-  
   line-height: 1.60em;
   width: 100%;
   box-sizing: border-box;
-  transform: scaleY(0);
-  transform-origin: top;
+  transform: scaleY(0); /* Réduit l'échelle verticale à 0 pour cacher le contenu */
+  transform-origin: top; /* Définit l'origine de la transformation en haut */
   height: 0;
   padding: 0;
-  opacity: 0;
-  
+  opacity: 0; /* Rend le contenu invisible */
 }
 
+/* Styles pour l'icône de flèche */
 .arrow-icon {
   width: 1em;
   height: 1em;
   font-size: 1.5em;
-  transition: transform 0.3s ease;
-  @media screen and (max-width: 768px){
+
+  transition: transform 0.3s ease; /* Ajoute une transition pour les transformations */
+  
+  @media screen and (max-width: 768px) {
     font-size: 1.6em;
   }
-
- 
 }
 
+/* Classe pour faire pivoter l'icône */
 .rotate {
-  transform: rotate(-180deg);
+  transform: rotate(-180deg); /* Pivote l'icône de 180 degrés */
 }
 
+/* Classe pour ouvrir le contenu du menu déroulant */
 .open {
   padding: 1.25em;
   height: auto;
-  transform: scaleY(1);
-  opacity: 1;
-  transition: transform 0.9s ease, opacity 0.9s ease, height 0.9s ease, padding 0.9s ease;
+  border-radius: 0.3em;
+  background-color: #F6F6F6;
+  transform: scaleY(1); /* Agrandit l'échelle verticale pour montrer le contenu */
+  opacity: 1; /* Rend le contenu visible */
+  transition: transform 0.9s ease, opacity 0.9s ease, height 0.9s ease, padding 0.9s ease; /* Ajoute des transitions pour la transformation, l'opacité, la hauteur et le padding */
 }
 
+/* Classe pour fermer le contenu du menu déroulant */
 .close {
   padding: 0 1.25em;
   height: 0;
-  transform: scaleY(0);
-  opacity: 0;
-  transition: transform 0.2s ease, opacity 0.2s ease, height 0.2s ease, padding 0.2s ease;
+  transform: scaleY(0); /* Réduit l'échelle verticale à 0 pour cacher le contenu */
+  opacity: 0; /* Rend le contenu invisible */
+  transition: transform 0.2s ease, opacity 0.2s ease, height 0.2s ease, padding 0.2s ease; /* Ajoute des transitions pour la transformation, l'opacité, la hauteur et le padding */
 }
-
-

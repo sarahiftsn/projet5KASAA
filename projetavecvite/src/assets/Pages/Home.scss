@@ -7,14 +7,17 @@
   max-width: 100%;
   margin: 0 auto;
   padding: 0 15px; /* Ajoute un padding pour éviter que le contenu touche les bords */
+  overflow: hidden;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 900px) {
   .home-container {
-    max-width: 23.4375em;
+    max-width: 47.8em;
       min-width:  20em;
     padding: 0em 0em;
     align-items: center;
+    overflow: hidden;
     
 }
 

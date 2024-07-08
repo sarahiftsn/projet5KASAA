@@ -1,4 +1,5 @@
 .aboutcontainer {
+  overflow: hidden;
   .paysage {
     img {
       width: 77.5em; /* 1240px / 16px (base font size) */
@@ -27,6 +28,7 @@
   }
 
   @media screen and (max-width: 926px) {
+
     margin: 1em;
     .dropdownn  {
       margin-top: 2em;
@@ -46,6 +48,7 @@
         height: 8em; /* Hauteur réduite pour la version mobile */
         margin: 0; /* Réinitialisation des marges */
         margin-top: 2em; /* Espacement en haut */
+        
       }
     }
   }

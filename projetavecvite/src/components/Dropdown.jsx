@@ -3,7 +3,7 @@ import { FaAngleDown } from 'react-icons/fa';
 import './Dropdown.scss'; 
 
 // Définition du composant Dropdown
-const Dropdown = ({ title, children, containerClassName, toggleCLassName, contentClassName }) => {
+const Dropdown = ({ title, children }) => {
   // État local pour gérer l'ouverture et la fermeture du dropdown
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,9 +15,9 @@ const Dropdown = ({ title, children, containerClassName, toggleCLassName, conten
 
   // Rendu du composant Dropdown
   return (
-    <div className={`dropdown-container ${containerClassName}`}>
-      {/* Conteneur du dropdown avec des classes CSS dynamiques */}
-      <div className={`dropdown-toggle ${toggleCLassName}`}>
+    <div className={`dropdown-container `}>
+      {/* Conteneur du dropdown*/}
+      <div className={`dropdown-toggle `}>
         {title} {/* Affiche le titre du dropdown */}
         {/* Icône de flèche pour indiquer l'état du dropdown */}
         <span className={`arrow-icon ${isOpen ? '' : 'rotate'}`} onClick={toggleDropdown}> 
