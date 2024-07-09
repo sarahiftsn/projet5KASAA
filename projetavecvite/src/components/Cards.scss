@@ -17,7 +17,7 @@ $card-title-color: #fff; // Title text color
   border: 0.063em solid $card-bg-color;
   border-radius: 1.25em;
   justify-content: center;
-  
+  height: auto;
   margin-top: $margin-top;
   display: flex;
   flex-wrap: wrap; // Pour permettre l'enroulement des cartes
@@ -30,6 +30,7 @@ $card-title-color: #fff; // Title text color
     height: $card-height;
     box-shadow: $card-box-shadow;
     display: flex;
+
    
     margin-top: 1.975em;
     position: relative; // Ajouter cette ligne
@@ -59,9 +60,10 @@ $card-title-color: #fff; // Title text color
       }
     }
   }
+  
 }
 
-@media screen and (max-width: 1115px) {
+@media screen and (max-width: 1500px) {
   .cards {
   width: 100%;
     align-items: center; // Centrer les cartes horizontalement
