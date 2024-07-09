@@ -5,6 +5,10 @@ footer {
     height: 13.0625em; // Conversion de 209px en em
     margin-top: 1em; // Conversion de 40px en em
     overflow: hidden;
+    display: flex; // Utilisez flexbox pour aligner les éléments
+    flex-direction: column; // Alignez les éléments en colonne
+    justify-content: center; // Centre verticalement les éléments
+    align-items: center; // Centre horizontalement les éléments
     
     
     
@@ -13,13 +17,15 @@ footer {
 
   .kasalogo {
     margin-top: 3.75em; // Conversion de 60px en em
-    margin-left: 36.25em;
+      
+      
+    
     
   }
 
-  .kasap {
+  .kasap  {
     color: white;
-    margin-left: 27.125em;
+    text-align: center;
     font-size: 1.2em;
     
   }
@@ -48,7 +54,7 @@ footer {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-left: 120px;
+      
       padding-top: 20px;
       
       
@@ -61,7 +67,7 @@ footer {
       text-align: center;
       
       flex-wrap: wrap;
-      padding-left: 5em;
+      
       max-width: 150px; /* Ajustez cette valeur en fonction de vos besoins */
       word-wrap: break-word;
      

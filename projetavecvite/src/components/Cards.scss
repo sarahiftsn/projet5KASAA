@@ -16,7 +16,8 @@ $card-title-color: #fff; // Title text color
   background-color: $card-bg-color;
   border: 0.063em solid $card-bg-color;
   border-radius: 1.25em;
-  margin-left: $margin-left;
+  justify-content: center;
+  
   margin-top: $margin-top;
   display: flex;
   flex-wrap: wrap; // Pour permettre l'enroulement des cartes
@@ -28,7 +29,8 @@ $card-title-color: #fff; // Title text color
     width: $card-width;
     height: $card-height;
     box-shadow: $card-box-shadow;
-    margin-left: 1.875em;
+    display: flex;
+   
     margin-top: 1.975em;
     position: relative; // Ajouter cette ligne
 
@@ -59,7 +61,7 @@ $card-title-color: #fff; // Title text color
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1115px) {
   .cards {
   width: 100%;
     align-items: center; // Centrer les cartes horizontalement
@@ -67,9 +69,11 @@ $card-title-color: #fff; // Title text color
     margin-top: $gap; // Utiliser l'espacement comme marge supérieure
     display: flex;
     justify-content: center;
-    padding-right: 1em;
+    align-items: center;
+   
     margin-right: 0;
     margin-bottom: 2em;
+    
 
   }
 
@@ -77,6 +81,8 @@ $card-title-color: #fff; // Title text color
     width: 100%; // La largeur prend tout l'espace disponible
     margin: 0;// Supprimer le margin-left pour les petits écrans
     margin-top: $gap; // Utiliser l'espacement comme marge supérieure
+   
+    
 
     &-image {
       width: 100%;
@@ -86,7 +92,7 @@ $card-title-color: #fff; // Title text color
     &-content {
       position: absolute;
       bottom: 0;
-      left: 2;
+      left: -1;
       width: 50%;
       padding: 0;
       margin: 0%;

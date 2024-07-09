@@ -17,7 +17,7 @@ $dropdown-header-title-margin-top: 0.125em; // 50px / 16px (base font size)
 .logement {
   .logement-pictures {
     margin-top: 1.875em;
-    @media (max-width: 768px) {margin-left: 0;}
+    @media (max-width: 1115px) {margin-left: 0;}
   }
   .logement-pictures img {
     width: 100%; // S'adapte à la largeur de son conteneur parent
@@ -30,7 +30,7 @@ $dropdown-header-title-margin-top: 0.125em; // 50px / 16px (base font size)
       color: #FF6060; // Couleur rouge pour desktop
       width: 31.25em; // Largeur fixe pour desktop
       height: 70px; // Hauteur fixe pour desktop
-      @media (max-width: 768px) {
+      @media (max-width: 1115px) {
         font-size: 20px; // Largeur 100% pour mobile
         display: flex;
         flex-wrap: wrap;
@@ -55,7 +55,7 @@ $dropdown-header-title-margin-top: 0.125em; // 50px / 16px (base font size)
     align-items: flex-end;
     margin-top: -9.8em; // Ajustez si nécessaire
     margin-bottom: 3em;
-    @media (max-width: 768px) {
+    @media (max-width: 1115px) {
       margin-top: 0.25em;
       flex-direction: row-reverse;
     
@@ -79,7 +79,7 @@ $dropdown-header-title-margin-top: 0.125em; // 50px / 16px (base font size)
         border-radius: 50%; /* Rend l'image circulaire */
         object-fit: cover;
         margin-left: 1.25em; // Espacement entre l'image et le nom
-        @media (max-width: 768px) {
+        @media (max-width: 1115px) {
           width: 38px; // Largeur 100% pour mobile
           height: 38px;
         }
@@ -92,7 +92,7 @@ $dropdown-header-title-margin-top: 0.125em; // 50px / 16px (base font size)
         max-width: 76px; /* Ajustez cette valeur en fonction de vos besoins */
       word-wrap: break-word;// Espacement entre l'image et le nom
       font-size: 18px;
-      @media (max-width: 768px) {
+      @media (max-width: 1115px) {
         font-size: 12px;
         margin-right: -2em; 
         max-width: 60px
@@ -111,7 +111,7 @@ $dropdown-header-title-margin-top: 0.125em; // 50px / 16px (base font size)
   .rating {
     display: flex;
     margin-top: 1.9em;
-    @media (max-width: 768px){
+    @media (max-width: 1115px){
       margin-top: -1.5em;
     }
   }
@@ -142,7 +142,7 @@ $dropdown-header-title-margin-top: 0.125em; // 50px / 16px (base font size)
     justify-content: space-between;
     margin-bottom: 0.713em;
     margin-top: 2em;
-    @media (max-width: 768px) {
+    @media (max-width: 1115x) {
       margin-top: -1.875em;
     }
    
@@ -152,7 +152,7 @@ $dropdown-header-title-margin-top: 0.125em; // 50px / 16px (base font size)
       margin-bottom: 1.4em;
 
 
-      @media (max-width: 768px) {
+      @media (max-width: 1115px) {
         width: 100%; // Largeur 100% pour mobile
       }
       .dropdown-title1{
@@ -162,7 +162,7 @@ $dropdown-header-title-margin-top: 0.125em; // 50px / 16px (base font size)
     
     
 
-    @media (max-width: 768px) {
+    @media (max-width: 1115px) {
       flex-direction: column; // Ajustement pour la disposition des éléments en version mobile
       margin-bottom: 0.5rem; // Ajustement pour la marge en version mobile
     }
